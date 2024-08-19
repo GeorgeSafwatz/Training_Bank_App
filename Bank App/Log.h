@@ -2,12 +2,13 @@
 
 #include<iostream>
 #include<string>
-#include"Utils.h"
+#include "GlobalUse.h"
+
 
 using namespace std;
 
 namespace loggers {
-	void logInfo(stClient const& client) {
+	void logClientInfo(stClient const & client) {
 		cout << "Client Name:" << client.name << endl;
 		cout << "Client Account Name:" << client.accountNumber << endl;
 		cout << "Client Account Balance:" << to_string(client.accountBalance) << endl;
@@ -18,7 +19,7 @@ namespace loggers {
 	void printClients(vector<stClient> const & vClients) {
 		for (size_t i = 0; i < vClients.size(); i++)
 		{
-			logInfo(vClients[i]);
+			logClientInfo(vClients[i]);
 			cout << "#########################" << endl;
 		}
 	}

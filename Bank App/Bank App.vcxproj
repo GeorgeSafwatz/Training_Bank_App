@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Checkers.h" />
+    <ClInclude Include="GlobalUse.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="Prompting.h" />
     <ClInclude Include="Utils.h" />
